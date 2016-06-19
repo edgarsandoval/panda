@@ -1,0 +1,58 @@
+@import '_common';
+
+body
+{
+	font-family: 'Avenir LT Std 45 Book' !important;
+    padding-bottom: 40px;
+    background-color: #111;
+
+	div.form-container
+	{
+		max-width: 400px;
+		margin: 0 auto;
+		
+		div.form-header
+		{
+			font-family: 'Avenir LT Std 95 Black' !important;
+			background-color: $base-dark;
+			color: $blanco;
+			padding: 0.5em;
+			text-align: center;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+
+
+		form
+		{
+			background-color: $blanco;
+			padding: 2em;
+			text-align: center;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+
+			div.form-image-header
+			{
+				img
+				{
+					max-width: 150px;
+				}
+			}
+
+			input[type="submit"]
+			{
+				&:active,
+				&:hover
+				{
+					border-color: $base-dark !important;
+					background-color: $base-such-dark;	
+				}
+				border-color: $base-dark;
+				background-color: $base-such-dark;
+				border-radius: 0;
+				width: 100%;
+				margin-top: 1em;
+			}
+		}
+	}
+}

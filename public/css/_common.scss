@@ -1,0 +1,43 @@
+// Definición de colores
+$base : #AB0202;
+$base-dark : #880000;
+$base-such-dark: #5D0000;
+$base-light: #CF1313;
+$base-such-light: #E73E3E;
+
+$blanco: #FFFFFF;
+$negro: #000000;
+$gris : #EEEEEE;
+
+// Definición de mixin's
+@mixin font-face($font-family, $src)
+{
+	@font-face
+	{
+		font-family: $font-family;
+		src: url($src);
+	}
+}
+
+
+// Definición de toda la familia 'Avenir LT Std'
+
+$fonts : (
+		'Avenir LT Std 95 Black' : 'AvenirLTStd-Black.otf',
+		'Avenir LT Std 45 Book' : 'AvenirLTStd-Book.otf',
+		'Avenir LT Std 85 Heavy' : 'AvenirLTStd-Heavy.otf',
+		'Avenir LT Std 35 Light' : 'AvenirLTStd-Light.otf',
+		'Avenir LT Std 65 Medium' : 'AvenirLTStd-Medium.otf',
+		'Avenir LT Std 55 Roman' : 'AvenirLTStd-Roman.otf',
+		'Avenir LT Std 95 Black Oblique' : 'AvenirLTStd-BlackOblique.otf',
+		'Avenir LT Std 45 Book Oblique' : 'AvenirLTStd-BookOblique.otf',
+		'Avenir LT Std 85 Heavy Oblique' : 'AvenirLTStd-HeavyOblique.otf',
+		'Avenir LT Std 35 Light Oblique' : 'AvenirLTStd-LightOblique.otf',
+		'Avenir LT Std 65 Medium Oblique' : 'AvenirLTStd-MediumOblique.otf',
+		'Avenir LT Std 55 Oblique' : 'AvenirLTStd-Oblique.otf'
+		);
+
+@each $font, $src in $fonts
+{
+	@include font-face($font, '../fonts/#{$src}');
+}

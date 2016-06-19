@@ -1,0 +1,37 @@
+@font-face { font-family: "Avenir LT Std 95 Black"; src: url("../fonts/AvenirLTStd-Black.otf"); }
+
+@font-face { font-family: "Avenir LT Std 45 Book"; src: url("../fonts/AvenirLTStd-Book.otf"); }
+
+@font-face { font-family: "Avenir LT Std 85 Heavy"; src: url("../fonts/AvenirLTStd-Heavy.otf"); }
+
+@font-face { font-family: "Avenir LT Std 35 Light"; src: url("../fonts/AvenirLTStd-Light.otf"); }
+
+@font-face { font-family: "Avenir LT Std 65 Medium"; src: url("../fonts/AvenirLTStd-Medium.otf"); }
+
+@font-face { font-family: "Avenir LT Std 55 Roman"; src: url("../fonts/AvenirLTStd-Roman.otf"); }
+
+@font-face { font-family: "Avenir LT Std 95 Black Oblique"; src: url("../fonts/AvenirLTStd-BlackOblique.otf"); }
+
+@font-face { font-family: "Avenir LT Std 45 Book Oblique"; src: url("../fonts/AvenirLTStd-BookOblique.otf"); }
+
+@font-face { font-family: "Avenir LT Std 85 Heavy Oblique"; src: url("../fonts/AvenirLTStd-HeavyOblique.otf"); }
+
+@font-face { font-family: "Avenir LT Std 35 Light Oblique"; src: url("../fonts/AvenirLTStd-LightOblique.otf"); }
+
+@font-face { font-family: "Avenir LT Std 65 Medium Oblique"; src: url("../fonts/AvenirLTStd-MediumOblique.otf"); }
+
+@font-face { font-family: "Avenir LT Std 55 Oblique"; src: url("../fonts/AvenirLTStd-Oblique.otf"); }
+
+body { font-family: 'Avenir LT Std 45 Book' !important; padding-bottom: 40px; background-color: #111; }
+
+body div.form-container { max-width: 400px; margin: 0 auto; }
+
+body div.form-container div.form-header { font-family: 'Avenir LT Std 95 Black' !important; background-color: #880000; color: #FFFFFF; padding: 0.5em; text-align: center; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+
+body div.form-container form { background-color: #FFFFFF; padding: 2em; text-align: center; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+
+body div.form-container form div.form-image-header img { max-width: 150px; }
+
+body div.form-container form input[type="submit"] { border-color: #880000; background-color: #5D0000; border-radius: 0; width: 100%; margin-top: 1em; }
+
+body div.form-container form input[type="submit"]:active, body div.form-container form input[type="submit"]:hover { border-color: #880000 !important; background-color: #5D0000; }
