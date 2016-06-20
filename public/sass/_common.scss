@@ -5,6 +5,8 @@ $base-such-dark: #5D0000;
 $base-light: #CF1313;
 $base-such-light: #E73E3E;
 
+$rojo-1 : #C0392B;
+
 $blanco: #FFFFFF;
 $negro: #000000;
 $gris : #EEEEEE;
@@ -17,6 +19,14 @@ $gris : #EEEEEE;
 		font-family: $font-family;
 		src: url($src);
 	}
+}
+
+@mixin placeholder($class, $icon)
+{
+	.#{$class} ::-webkit-input-placeholder::before { font-family: fontAwesome; content: $icon; color: #69f }
+	.#{$class} ::-moz-placeholder::before { font-family: fontAwesome; content: $icon; color: #69f } /* firefox 19+ */
+	.#{$class} :-ms-input-placeholder::before { font-family: fontAwesome; content: $icon; color: #69f } /* ie */
+	.#{$class} input:-o-placeholder::before { font-family: fontAwesome; content: $icon; color: #69f } /*opera*/
 }
 
 
@@ -41,3 +51,5 @@ $fonts : (
 {
 	@include font-face($font, '../fonts/#{$src}');
 }
+
+@import '_setup';

@@ -1,1 +1,116 @@
 @extends('layout.default')
+
+@section('style')
+{{ Html::style( asset('css/flexslider.css') )}}
+{{ Html::style( asset('css/home.css'))}}
+@endsection
+
+@section('script')
+{{ Html::script( asset('js/jquery.flexslider.js'))}}
+{{ Html::script( asset('js/home.js'))}}
+@endsection
+
+
+@section('main')
+<!-- Home content -->
+<section class="home">
+	<!-- Slider -->
+	<section class="flexslider">
+		<ul class="slides">
+			<li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 2;" class="flex-active-slide">
+				<img src="{{ asset('images/slides/1.jpg')}}" alt="" draggable="false">
+				<div class="caption">
+					<div class="container">
+						<div class="col-md-6">
+							<h3>360+ Retina-ready icons</h3>
+							<br>
+							<p>The iconic Font Awesome for Bootstrap</p>
+							<br> <a class="btn btn-sm" title="" href="/retina-ready-icons">Find out more</a> 
+							<a class="btn btn-primary btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">
+								Buy now &nbsp; <em class="fa fa-chevron-right"></em>
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+				<img src="{{ asset('images/slides/2.jpg')}}" alt="" draggable="false">
+				<div class="caption">
+					<div class="container">
+						<div class="col-md-6">
+							<h3>Built-in Stripe payments</h3>
+							<br>
+							<p>Instant setup with payment profiles. No monthly fees.</p>
+							<br> <a class="btn btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">Find out more</a> 
+							<a class="btn btn-primary btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">
+								Buy now &nbsp; <em class="fa fa-chevron-right"></em>
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+				<img src="{{ asset('images/slides/3.jpg')}}" alt="" draggable="false">
+				<div class="caption">
+					<div class="container">
+						<div class="col-md-6 col-md-offset-6 text-right">
+							<h3>Feature-packed modules</h3>
+							<br>
+							<p>Isotope listing, price filtering, instand search and much more...</p>
+							<br> <a class="btn btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">Find out more</a> 
+							<a class="btn btn-primary btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">
+								Buy now &nbsp; <em class="fa fa-chevron-right"></em>
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 1;" class="">
+				<img src="{{ asset('images/slides/4.jpg')}}" alt="" draggable="false">
+				<div class="caption">
+					<div class="container">
+						<div class="col-md-6 col-md-offset-6 text-right">
+							<h3>Responsive. Flexible &amp; sleek.</h3>
+							<br>
+							<p>Expertly crafted with Bootstrap front-end framework</p>
+							<br> <a class="btn btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">Find out more</a> 
+							<a class="btn btn-primary btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">
+								Buy now &nbsp; <em class="fa fa-chevron-right"></em>
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<!-- End class="flexslider" -->
+	<section class="featured">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9">
+					<!-- Products list -->
+		 			<ul class="product-list isotope loading">
+		 				@for($i = 0; $i < 5; $i++)
+						<li class="standard" data-price="58" style="position: absolute; left: 0px; top: 0px;">
+							<a href="product.html" title="Lisette Dress">
+								<div class="image">
+									<img class="primary" src="{{ asset('images/thumbnails/db_file_img_48_640xauto.jpg')}}" alt="Lisette Dress">
+									<img class="secondary" src="{{ asset('images/thumbnails/db_file_img_49_640xauto.jpg')}}" alt="Lisette Dress">
+								</div>
+
+								<div class="title">
+									<div class="prices">
+										<span class="price">$58.00</span>
+									</div>
+									<h3>Lisette Dress</h3>
+								</div>
+							</a>
+						</li>
+						@endfor
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
+@endsection
