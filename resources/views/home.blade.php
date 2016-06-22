@@ -17,15 +17,15 @@
 	<!-- Slider -->
 	<section class="flexslider">
 		<ul class="slides">
-			<li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 2;" class="flex-active-slide">
-				<img src="{{ asset('images/slides/1.jpg')}}" alt="" draggable="false">
+			<li>
+				<img src="{{ asset('images/slides/1.jpg') }}" alt="" />
 				<div class="caption">
 					<div class="container">
 						<div class="col-md-6">
 							<h3>360+ Retina-ready icons</h3>
-							<br>
+							<br />
 							<p>The iconic Font Awesome for Bootstrap</p>
-							<br> <a class="btn btn-sm" title="" href="/retina-ready-icons">Find out more</a> 
+							<br /> <a class="btn btn-sm" title="" href="/retina-ready-icons">Find out more</a> 
 							<a class="btn btn-primary btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">
 								Buy now &nbsp; <em class="fa fa-chevron-right"></em>
 							</a>
@@ -33,15 +33,15 @@
 					</div>
 				</div>
 			</li>
-			<li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
-				<img src="{{ asset('images/slides/2.jpg')}}" alt="" draggable="false">
+			<li>
+				<img src="{{ asset('images/slides/2.jpg') }}" alt="" />
 				<div class="caption">
 					<div class="container">
 						<div class="col-md-6">
 							<h3>Built-in Stripe payments</h3>
-							<br>
+							<br />
 							<p>Instant setup with payment profiles. No monthly fees.</p>
-							<br> <a class="btn btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">Find out more</a> 
+							<br /> <a class="btn btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">Find out more</a> 
 							<a class="btn btn-primary btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">
 								Buy now &nbsp; <em class="fa fa-chevron-right"></em>
 							</a>
@@ -49,15 +49,15 @@
 					</div>
 				</div>
 			</li>
-			<li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
-				<img src="{{ asset('images/slides/3.jpg')}}" alt="" draggable="false">
+			<li>
+				<img src="{{ asset('images/slides/3.jpg') }}" alt="" />
 				<div class="caption">
 					<div class="container">
 						<div class="col-md-6 col-md-offset-6 text-right">
 							<h3>Feature-packed modules</h3>
-							<br>
+							<br />
 							<p>Isotope listing, price filtering, instand search and much more...</p>
-							<br> <a class="btn btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">Find out more</a> 
+							<br /> <a class="btn btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">Find out more</a> 
 							<a class="btn btn-primary btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">
 								Buy now &nbsp; <em class="fa fa-chevron-right"></em>
 							</a>
@@ -65,15 +65,15 @@
 					</div>
 				</div>
 			</li>
-			<li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 1;" class="">
-				<img src="{{ asset('images/slides/4.jpg')}}" alt="" draggable="false">
+			<li>
+				<img src="{{ asset('images/slides/4.jpg') }}" alt="" />
 				<div class="caption">
 					<div class="container">
 						<div class="col-md-6 col-md-offset-6 text-right">
 							<h3>Responsive. Flexible &amp; sleek.</h3>
-							<br>
+							<br />
 							<p>Expertly crafted with Bootstrap front-end framework</p>
-							<br> <a class="btn btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">Find out more</a> 
+							<br /> <a class="btn btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">Find out more</a> 
 							<a class="btn btn-primary btn-sm" title="" href="http://themeforest.net/item/la-boutique-responsive-ecommerce-template/5573130?ref=Tfingi">
 								Buy now &nbsp; <em class="fa fa-chevron-right"></em>
 							</a>

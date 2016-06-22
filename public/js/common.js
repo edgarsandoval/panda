@@ -1,3 +1,12 @@
+$(window).load(function()
+{
+	$(".loading .loading-image").addClass("dissappear");
+	$(".loading .loading-text").addClass("dissappear");
+	$(".slider").addClass("goes-up");
+	$(".navbar-default").addClass("show");
+	$('.loading').delay(1000).addClass("fade-out");
+});
+
 $(document).ready(function() {
 	"use strict";
 
@@ -63,6 +72,7 @@ $(document).ready(function() {
 	
 	boutique.resize_menu(screen_width);
 });*/
+
 $(window).load(function() {
 	"use strict";
 

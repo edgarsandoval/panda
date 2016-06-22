@@ -28,6 +28,16 @@
 
 </head>
 <body>
+	<div class="loading">
+		<div class="loader">
+    		<h2 class="loading-text cd-headline clip is-full-width"> <span class="cd-words-wrapper"> <b class="is-visible">Espera</b> <b>Creando cosas increíbles...</b></span> </h2>
+    		<div class="loading-image"><img src="images/loading.gif" alt="Image"></div>
+		</div>
+	<!-- end loader --> 
+	</div>
+	<!-- end loading -->
+	<div class="transition-overlay"></div>
+	<!-- end transition-overlay -->
 	<div class="wrapper">
 		<!-- Header -->
 		<div class="header">
