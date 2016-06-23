@@ -10,15 +10,15 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::get('/', 'HomeController@showHome');
-Route::get('/admin', function()
+
+Route::auth();
+
+Route::get('/', 'FrontController@index');
+Route::get('admin', 'FrontController@admin');
+
+Route::resource('usuario', 'UserController');
+
+Route::get('dabb', function()
 {
-	return view('admin');
+	return view('login');
 });
-
-Route::get('login', 'Auth\AuthController@login');
-
-Route::post('login', 'Auth\AuthController@loginUser');
-
-Route::get('logout', 'Auth\AuthController@logout');
-

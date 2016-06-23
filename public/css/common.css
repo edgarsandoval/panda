@@ -49,7 +49,7 @@ body { background-color: #f0f0f0; font-family: "Avenir LT Std 45 Book", "Helveti
 ---*/
 p, ul, ol, h1, h2, h3, h4, h5, h6, pre, table, form, blockquote, canvas, caption, embed, fieldset, figure, video, progress, object, map, hr { margin: 0 0 20px; }
 
-a { color: #c0392b; text-decoration: underline; -webkit-transition: color 200ms ease-in-out, background-color 200ms ease-in-out, -webkit-border-color 200ms ease-in-out; -moz-transition: color 200ms ease-in-out, background-color 200ms ease-in-out, -moz-border-color 200ms ease-in-out; -o-transition: color 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out; -ms-transition: color 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out; transition: color 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out; }
+a { color: #c0392b; text-decoration: none; -webkit-transition: color 200ms ease-in-out, background-color 200ms ease-in-out, -webkit-border-color 200ms ease-in-out; -moz-transition: color 200ms ease-in-out, background-color 200ms ease-in-out, -moz-border-color 200ms ease-in-out; -o-transition: color 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out; -ms-transition: color 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out; transition: color 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out; }
 
 a:hover, a:focus { color: #962d22; }
 
@@ -503,35 +503,6 @@ textarea { min-height: 60px !important; max-height: 240px !important; min-width:
 .box.border-left { border-left: 5px solid #c0392b; }
 
 .extend { margin: 0 -20px; padding: 0 20px; }
-
-/*---
-| PANELS (THESE TO REPLACE ALL BOXES)
----*/
-.panel { margin-bottom: 20px; background-color: #ffffff; padding: 20px; -webkit-border-radius: 2px; -webkit-background-clip: padding-box; -moz-border-radius: 2px; -moz-background-clip: padding; border-radius: 2px; background-clip: padding-box; -webkit-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25); -moz-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25); box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25); /*color: @arguments;*/ }
-
-.panel .panel-content { margin: -20px; padding: 20px; }
-
-.panel.border-top { border-top: 5px solid #c0392b; }
-
-.panel.border-right { border-right: 5px solid #c0392b; }
-
-.panel.border-bottom { border-bottom: 5px solid #c0392b; }
-
-.panel.border-left { border-left: 5px solid #c0392b; }
-
-.panel-navigation { list-style: none; margin: -20px 0; font-size: 12px; }
-
-.panel-navigation .panel-navigation { margin: 0; }
-
-.panel-navigation a { display: block; padding: 15px 20px; border-bottom: 1px solid #f0f0f0; margin: 0 -20px; color: #474948; text-decoration: none; position: relative; }
-
-.panel-navigation a:hover { background-color: #c0392b; color: #ffffff; border-color: #c0392b; }
-
-.panel-navigation a:hover .toggle { color: #c0392b; background-color: #ffffff; }
-
-.panel-navigation.primary > li > a { font-size: 16px; line-height: 24px; font-weight: 700; }
-
-.panel-navigation.primary .toggle { margin-top: 2px; font-weight: 400; font-size: 14px; line-height: 20px; height: 20px; width: 20px; text-align: center; position: absolute; right: 20px; background-color: #d7d7d7; color: #ffffff; -webkit-border-radius: 2px; -webkit-background-clip: padding-box; -moz-border-radius: 2px; -moz-background-clip: padding; border-radius: 2px; background-clip: padding-box; }
 
 /*---
 | BREADCRUMB

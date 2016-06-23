@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Edgar Sandoval">
@@ -19,31 +20,7 @@
 
 	<!-- JS's  -->
 
-<script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
-<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('js/jquery-migrate-1.2.1.min.js') }}"></script>
-<script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
-<script src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>
-<script src="{{ asset('js/jquery.flexslider.js') }}"></script>
-<script src="{{ asset('js/jquery-ui-1.10.2.custom.js') }}"></script>
-<script src="{{ asset('js/jquery.easing.min.js') }}"></script>
-<script src="{{ asset('js/jquery.elevatezoom.js') }}"></script>
-<script src="{{ asset('js/jquery.sharrre-1.3.5.js') }}"></script>
-<script src="{{ asset('js/jquery.cookie.js') }}"></script>
-<script src="{{ asset('js/la_boutique.js') }}"></script>
-<script src="{{ asset('js/tfingi-megamenu/tfingi-megamenu-frontend.js')}}"></script>
-<script type="text/javascript">
-$(window).load(function()
-{
-	$('html, body').animate({scrollTop: 0}, 'fast')
-	$(".loading-page .loading-image").addClass("dissappear");
-	$(".loading-page .loading-text").addClass("dissappear");
-	$(".slider").addClass("goes-up");
-	$(".navbar-default").addClass("show");
-	$('.loading-page').delay(1000).addClass("fade-out");
-});
-</script>
-	{{-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
@@ -53,7 +30,7 @@ $(window).load(function()
 	<script src="https://cdn.jsdelivr.net/sharrre/1.3.5/jquery.sharrre.min.js"></script>
 	{{ Html::script( asset('js/tfingi-megamenu/tfingi-megamenu-frontend.js')) }}
 	{{ Html::script( asset('js/common.js ')) }}
-	{{ Html::script( asset('js/la_boutique.js'))}} --}}
+	{{-- {{ Html::script( asset('js/la_boutique.js'))}} --}}
 	@yield('script')
 
 </head>
@@ -78,7 +55,8 @@ $(window).load(function()
 					<div class="row">
 						<div class="col-sm-6">
 							<p>
-								¡Bienvenido <a href="#"><strong>{{ Auth::user()->name }}</strong> !</a>
+								¡Hallo, schön dich wieder zu sehen <strong>{{ Auth::user()->name }}</strong>!&nbsp;&nbsp;--&nbsp;&nbsp;
+								<a href="admin"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;&nbsp;Ir al panel de administración</a>
 							</p>
 						</div>
 						<div class="col-sm-6 hidden-xs">

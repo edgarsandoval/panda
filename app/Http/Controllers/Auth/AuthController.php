@@ -71,45 +71,4 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
-
-    public function login()
-    {        
-        if(!Auth::check())
-            return view('login');
-        return redirect()->route('/');
-    }
-
-    public function loginUser(Request $request)
-    {
-        $data = $request->all();
-
-        $rules = array(
-            'email' => 'required',
-            'password' => 'required',
-        );
-
-        $validator = Validator::make($data, $rules);
-        if ($validator->fails())
-            return back()->withInput(Input::except('password'))->withErrors($validator);
-
-        $userdata = array(
-            'email' => $request->input('email'),
-            'password'=> $request->input('password')
-        );
-
-        if(Auth::validate($userdata) && Auth::attempt($userdata))
-        {
-            $request->session()->forget('error');
-            return redirect()->intended('/');
-        }
-
-        session(['error' => 'Usuario o contraseña incorrectos']); 
-        return redirect('login');
-    }
-
-    public function logout()
-    {
-        Auth::logout(); // logout user
-        return redirect('/'); //redirect back to login
-    }
 }
