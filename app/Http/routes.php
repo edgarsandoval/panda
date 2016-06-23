@@ -11,6 +11,10 @@
 |
 */
 Route::get('/', 'HomeController@showHome');
+Route::get('/admin', function()
+{
+	return view('admin');
+});
 
 Route::get('login', 'Auth\AuthController@login');
 

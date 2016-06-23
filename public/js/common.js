@@ -1,10 +1,11 @@
 $(window).load(function()
 {
-	$(".loading .loading-image").addClass("dissappear");
-	$(".loading .loading-text").addClass("dissappear");
+	$('html, body').animate({scrollTop: 0}, 'fast')
+	$(".loading-page .loading-image").addClass("dissappear");
+	$(".loading-page .loading-text").addClass("dissappear");
 	$(".slider").addClass("goes-up");
 	$(".navbar-default").addClass("show");
-	$('.loading').delay(1000).addClass("fade-out");
+	$('.loading-page').delay(1000).addClass("fade-out");
 });
 
 $(document).ready(function() {

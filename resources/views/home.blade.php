@@ -6,8 +6,8 @@
 @endsection
 
 @section('script')
-{{ Html::script( asset('js/jquery.flexslider.js'))}}
-{{ Html::script( asset('js/home.js'))}}
+{{-- {{ Html::script( asset('js/jquery.flexslider.js'))}} --}}
+{{-- {{ Html::script( asset('js/home.js'))}} --}}
 @endsection
 
 
@@ -108,7 +108,64 @@
 						</li>
 						@endfor
 					</ul>
+					<!-- End class="product-list isotope" -->
 				</div>
+				<div class="col-sm-3">
+                    <!-- Categories widget -->
+                    <div class="widget Categories">
+                        <h3 class="widget-title widget-title ">Categories</h3>
+                        <ul>
+                            <li>
+                                <a href='category.html' class="title">Mens</a>
+
+                                <ul>
+                                    <li>
+                                        <a href='category.html' class="title">T-Shirts</a>
+                                    </li>
+                                    <li>
+                                        <a href='category.html' class="title">Jackets</a>
+                                    </li>
+                                    <li>
+                                        <a href='category.html' class="title">Jumpers</a>
+                                    </li>
+                                    <li>
+                                        <a href='category.html' class="title">Shoes</a>
+                                    </li>
+                                    <li>
+                                        <a href='category.html' class="title">Shirts</a>
+                                    </li>
+                                    <li>
+                                        <a href='category.html' class="title">Accessories</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href='category.html' class="title">Womens</a>
+                                <ul>
+                                    <li>
+                                        <a href='category.html' class="title">Shoes</a>
+                                    </li>
+                                    <li>
+                                        <a href='category.html' class="title">Dresses</a>
+                                    </li>
+                                    <li>
+                                        <a href='category.html' class="title">Bags</a>
+                                    </li>
+                                    <li>
+                                        <a href='category.html' class="title">Trousers</a>
+                                    </li>
+                                    <li>
+                                        <a href='category.html' class="title">Tops</a>
+                                    </li>
+                                    <li>
+                                        <a href='category.html' class="title">Accessories</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End class="widget Categories" -->
+                </div>
 			</div>
 		</div>
 	</section>

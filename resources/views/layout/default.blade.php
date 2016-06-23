@@ -10,30 +10,60 @@
 	<title>Panda</title>
 
 	<!-- CSS's -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	{{ Html::style( asset('js/tfingi-megamenu/tfingi-megamenu-frontend.css')) }}
+	{{ Html::style( asset('css/pomegranate.css')) }}
 	{{ Html::style( asset('css/common.css') ) }}
 	@yield('style')
 
 	<!-- JS's  -->
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
+
+<script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/jquery-migrate-1.2.1.min.js') }}"></script>
+<script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
+<script src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>
+<script src="{{ asset('js/jquery.flexslider.js') }}"></script>
+<script src="{{ asset('js/jquery-ui-1.10.2.custom.js') }}"></script>
+<script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('js/jquery.elevatezoom.js') }}"></script>
+<script src="{{ asset('js/jquery.sharrre-1.3.5.js') }}"></script>
+<script src="{{ asset('js/jquery.cookie.js') }}"></script>
+<script src="{{ asset('js/la_boutique.js') }}"></script>
+<script src="{{ asset('js/tfingi-megamenu/tfingi-megamenu-frontend.js')}}"></script>
+<script type="text/javascript">
+$(window).load(function()
+{
+	$('html, body').animate({scrollTop: 0}, 'fast')
+	$(".loading-page .loading-image").addClass("dissappear");
+	$(".loading-page .loading-text").addClass("dissappear");
+	$(".slider").addClass("goes-up");
+	$(".navbar-default").addClass("show");
+	$('.loading-page').delay(1000).addClass("fade-out");
+});
+</script>
+	{{-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/elevatezoom/3.0.8/jqueryElevateZoom.js"></script>
+	<script src="https://cdn.jsdelivr.net/sharrre/1.3.5/jquery.sharrre.min.js"></script>
 	{{ Html::script( asset('js/tfingi-megamenu/tfingi-megamenu-frontend.js')) }}
 	{{ Html::script( asset('js/common.js ')) }}
+	{{ Html::script( asset('js/la_boutique.js'))}} --}}
 	@yield('script')
 
 </head>
 <body>
-	<div class="loading">
+	<div class="loading-page">
 		<div class="loader">
-    		<h2 class="loading-text cd-headline clip is-full-width"> <span class="cd-words-wrapper"> <b class="is-visible">Espera</b> <b>Creando cosas increíbles...</b></span> </h2>
-    		<div class="loading-image"><img src="images/loading.gif" alt="Image"></div>
+			<h2 class="loading-text cd-headline clip is-full-width"> <span class="cd-words-wrapper"> <b class="is-visible">Espera</b> <b>Creando cosas increíbles...</b></span> </h2>
+			<div class="loading-image"><img src="{{ asset('images/loading.gif') }}" alt="Image"></div>
 		</div>
-	<!-- end loader --> 
+		<!-- end loader --> 
 	</div>
 	<!-- end loading -->
 	<div class="transition-overlay"></div>
@@ -94,7 +124,7 @@
 											<li>
 												<a title="Lisette Dress" href="product.html">
 													<div class="image">
-														<img src="img/thumbnails/db_file_img_48_60x60.jpg" alt="">
+														<img src="{{ asset('images/thumbnails/db_file_img_48_60x60.jpg') }}" alt="">
 													</div>
 													<h6>Lisette Dress</h6>
 												</a>
@@ -102,7 +132,7 @@
 											<li>
 												<a title="Malta Dress" href="product.html">
 													<div class="image">
-														<img src="img/thumbnails/db_file_img_137_60x60.jpg" alt="">
+														<img src="{{ asset('images/thumbnails/db_file_img_48_60x60.jpg') }}" alt="">
 													</div>
 													<h6>Malta Dress</h6>
 													</a>
@@ -110,7 +140,7 @@
 												<li>
 													<a title="Marais Dress" href="product.html">
 														<div class="image">
-															<img src="img/thumbnails/db_file_img_42_60x60.jpg" alt="">
+															<img src="{{ asset('images/thumbnails/db_file_img_48_60x60.jpg') }}" alt="">
 														</div>
 														<h6>Marais Dress</h6>
 													</a>
@@ -118,7 +148,7 @@
 												<li>
 													<a title="Millay Dress" href="product.html">
 														<div class="image">
-															<img src="img/thumbnails/db_file_img_107_60x60.jpg" alt="">
+															<img src="{{ asset('images/thumbnails/db_file_img_48_60x60.jpg') }}" alt="">
 														</div>
 														<h6>Millay Dress</h6>
 													</a>
@@ -126,7 +156,7 @@
 												<li>
 													<a title="Momoko Dress" href="product.html">
 														<div class="image">
-															<img src="img/thumbnails/db_file_img_132_60x60.jpg" alt="">
+															<img src="{{ asset('images/thumbnails/db_file_img_48_60x60.jpg') }}" alt="">
 														</div>
 														<h6>Momoko Dress</h6>
 													</a>
@@ -168,30 +198,30 @@
 								<div class="menu-main-navigation-container">
 									<ul id="menu-main-navigation" class="main-menu">
 									
-										<li class="menu-item-home menu-item-has-children megamenu-parent  megamenu-columns-3" data-width="" style="position: relative;">
+										<li class="menu-item-home menu-item-has-children megamenu-parent" data-width="">
 											<a href="index.html">Home</a>
-											<ul class="sub-menu megamenu-sub-menu" style="width: 780px; margin-left: 0px;">
+											<ul class="sub-menu">
 												<li class="megamenu-heading"><a href="#MegaMenuHeading"><h3>Responsive Full Width Megamenu</h3></a></li>
 												<li class="menu-item-has-children megamenu-column">
 													<a href="#MegaMenuColumn">Mega Menu Column</a>
-													<ul class="megamenu-inner-sub-menu">
-														<li class="megamenu-heading first-submenu-header"><a href="#MegaMenuHeading">Display images</a></li>
+													<ul class="sub-menu">
+														<li class="megamenu-heading"><a href="#MegaMenuHeading">Display images</a></li>
 														<li class="megamenu-content">
-															<p><img title="" alt="" src="img/megamenu/img01.jpg"></p>
+															<p><img title="" alt="" src="{{ asset('images/img01.jpg') }}"></p>
 															<p>Praesent a dolor sem. Sed scelerisque, tellus id pulvinar tristique, erat eros rutrum mi, id adipiscing arcu sem vel est. Ut ac turpis ipsum. Mauris leo nulla, vestibulum id bibendum.</p></li>
 													</ul>
-												</li>	
+												</li>
 												<li class="menu-item-has-children megamenu-column"><a href="#MegaMenuColumn">Mega Menu Column</a>
-													<ul class="megamenu-inner-sub-menu">
-														<li class="megamenu-heading first-submenu-header"><a href="#MegaMenuHeading">Display videos</a></li>
-														<li class="megamenu-content"><p> <iframe src="//player.vimeo.com/video/68161548" width="225" height="144" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+													<ul class="sub-menu">
+														<li class="megamenu-heading"><a href="#MegaMenuHeading">Display videos</a></li>
+														<li class="megamenu-content"><p> <iframe src='//player.vimeo.com/video/68161548' width='225' height='144' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 															</p>
 															<p>Praesent a dolor sem. Sed scelerisque, tellus id pulvinar tristique, erat eros rutrum mi, id adipiscing arcu sem vel est. Ut ac turpis ipsum. Mauris leo nulla, vestibulum id bibendum.</p></li>
 													</ul>
 												</li>
 												<li class="menu-item-has-children megamenu-column"><a href="#MegaMenuColumn">Mega Menu Column</a>
-													<ul class="megamenu-inner-sub-menu">
-														<li class="megamenu-heading first-submenu-header"><a href="#MegaMenuHeading">And Google maps!</a></li>
+													<ul class="sub-menu">
+														<li class="megamenu-heading"><a href="#MegaMenuHeading">And Google maps!</a></li>
 														<li class="megamenu-content">
 															<p>
 																<iframe width="100%" height="144" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/?ie=UTF8&amp;t=m&amp;ll=52.204004,0.122824&amp;spn=0.005865,0.014677&amp;z=11&amp;output=embed"></iframe>
@@ -238,7 +268,7 @@
 													<a href="category.html">Mens</a>
 													<ul class="sub-menu">
 														<li><a href="category.html">Shoes</a></li>
-														<li><a href="category.html">Accesories</a></li>
+														<li ><a href="category.html">Accesories</a></li>
 														<li><a href="category.html" title="Shirts">Shirts</a></li>
 														<li><a href="category.html" title="Shoes">Shoes</a></li>
 													</ul>
@@ -271,12 +301,12 @@
 											</ul>
 										</li>
 										
-										<li class="menu-item-has-children megamenu-parent megamenu-columns-3" data-width="550" style="position: relative;">
+										<li class="menu-item-has-children megamenu-parent" data-width="550">
 											<a href="#">Features</a>
-											<ul class="sub-menu megamenu-sub-menu" style="width: 550px; margin-left: 0px;">
+											<ul class="sub-menu">
 												<li class="menu-item-has-children megamenu-column"><a href="#MegaMenuColumn">Mega Menu Column</a>
-													<ul class="megamenu-inner-sub-menu">
-														<li class="megamenu-heading first-submenu-header"><a href="#MegaMenuHeading">Components</a></li>
+													<ul class="sub-menu">
+														<li class="megamenu-heading"><a href="#MegaMenuHeading">Components</a></li>
 														<li><a href="typography.html" title="Typography" class="title">Typography</a></li>
 														<li><a href="retina-ready-icons.html" title="Retina-ready icons" class="title">Retina-ready icons</a></li>
 														<li><a href="buttons.html" title="Buttons" class="title">Buttons</a></li>
@@ -285,8 +315,8 @@
 													</ul>
 												</li>
 												<li class="menu-item-has-children megamenu-column"><a href="#MegaMenuColumn">Mega Menu Column</a>
-													<ul class="megamenu-inner-sub-menu">
-														<li class="megamenu-heading first-submenu-header"><a href="#MegaMenuHeading">Pages</a></li>
+													<ul class="sub-menu">
+														<li class="megamenu-heading"><a href="#MegaMenuHeading">Pages</a></li>
 														<li><a href="about-us.html" title="About us" class="title">About us</a></li>
 														<li><a href="store-locator.html" title="Store locator" class="title">Store locator</a></li>
 														<li><a href="blog.html" title="Blog" class="title">Blog</a></li>
@@ -295,8 +325,8 @@
 													</ul>
 												</li>
 												<li class="menu-item-has-children megamenu-column"><a href="#MegaMenuColumn">Mega Menu Column</a>
-													<ul class="megamenu-inner-sub-menu">
-														<li class="megamenu-heading first-submenu-header"><a href="#MegaMenuHeading">Accounts</a></li>
+													<ul class="sub-menu">
+														<li class="megamenu-heading"><a href="#MegaMenuHeading">Accounts</a></li>
 														<li><a href="order-history.html">Order History</a></li>
 														<li><a href="checkout-start.html">Login / Register</a></li>
 														<li><a href="reset-password.html">Reset password</a></li>
@@ -325,30 +355,30 @@
 											</ul>
 										</li>
 										
-										<li><a href="blog.html">Blog</a></li>
+										<li ><a href="blog.html">Blog</a></li>
 										
-										<li><a href="store-locator.html">Store locator</a></li>
+										<li ><a href="store-locator.html">Store locator</a></li>
 										
-										<li><a href="cart.html">Cart</a></li>
+										<li ><a href="cart.html">Cart</a></li>
 										
-										<li class="menu-item-has-children megamenu-parent megamenu-columns-1" data-width="400" style="position: relative;">
+										<li class="menu-item-has-children megamenu-parent" data-width="400">
 											<a href="contact-us.html">Contact Us</a>
-											<ul class="sub-menu megamenu-sub-menu" style="width: 400px; margin-left: -148px;">
+											<ul class="sub-menu">
 												<li class="megamenu-column"><a href="#MegaMenuColumn">Mega Menu Column</a></li>
 												<li class="megamenu-heading"><a href="#MegaMenuHeading">Contact Us</a></li>
 												<li class="megamenu-content">
 													<div class="wpcf7">
 														<form action="" method="post" class="wpcf7-form" novalidate="novalidate">
 															<label>Your Name (required)</label>
-															<input type="text" name="your-name" value="" size="40" aria-required="true">
+															<input type="text" name="your-name" value="" size="40" aria-required="true" />
 															<label>Your Email (required)</label>
-															<input type="email" name="your-email" value="" size="40" aria-required="true">
+															<input type="email" name="your-email" value="" size="40"aria-required="true" />
 															<label>Subject</label>
-															<input type="text" name="your-subject" value="" size="40">
+															<input type="text" name="your-subject" value="" size="40" />
 															<label>Your Message</label>
-															<textarea name="your-message" cols="40" rows="10"></textarea>
+															<textarea name="your-message" cols="40" rows="10" ></textarea>
 
-															<input type="submit" value="Send" class="btn btn-primary">
+															<input type="submit" value="Send" class="btn btn-primary" />
 														</form>
 													</div>
 												</li>
@@ -358,13 +388,20 @@
 									</ul>
 								</div>	
 							</div>	
-						</div>
-						<div class="col-md-3 visible-lg">	
-						</div>
-					</div>			
-				</div>
-			</nav>
-			<!-- End class="navigation" -->
+
+
+
+										</div>
+
+										<div class="col-md-3 visible-lg">
+											
+											
+										</div>
+									</div>		
+								
+								</div>
+							</nav>
+							<!-- End class="navigation" -->
 			<!-- Content section -->
 			<section class="main">
 				@yield('main')
